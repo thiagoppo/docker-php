@@ -1,4 +1,4 @@
-FROM php:5.6-fpm
+FROM php:fpm
 
 WORKDIR /var/www/html
 
