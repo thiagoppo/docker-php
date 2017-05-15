@@ -25,6 +25,10 @@ RUN mv composer.phar /usr/local/bin/composer
 
 RUN composer global require "laravel/installer"
 
+RUN composer global require "phpunit/phpunit"
+
+RUN ln -s /tmp/vendor/bin/phpunit /usr/local/bin/phpunit
+
 RUN apt-get -y install nodejs
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
