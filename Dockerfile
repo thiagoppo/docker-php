@@ -23,12 +23,4 @@ RUN docker-php-ext-install pdo_pgsql
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
-RUN apt-get -y install nodejs
-
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-
-RUN apt-get -y install nodejs-legacy
-
-RUN curl -L https://npmjs.org/install.sh | sh
-
 CMD ["php-fpm"]
