@@ -23,12 +23,6 @@ RUN docker-php-ext-install pdo_pgsql
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 
-RUN composer global require "laravel/installer"
-
-RUN composer global require "phpunit/phpunit"
-
-RUN ln -s /tmp/vendor/bin/phpunit /usr/local/bin/phpunit
-
 RUN apt-get -y install nodejs
 
 RUN ln -s /usr/bin/nodejs /usr/bin/node
@@ -36,17 +30,5 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN apt-get -y install nodejs-legacy
 
 RUN curl -L https://npmjs.org/install.sh | sh
-
-RUN npm install bower -g
-
-RUN npm install gulp -g
-
-RUN npm install less -g
-
-RUN npm link bower
-
-RUN npm link gulp
-
-RUN npm link less
 
 CMD ["php-fpm"]
