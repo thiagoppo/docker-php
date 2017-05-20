@@ -1,10 +1,6 @@
-# docker-phpfpm-laravel-nodejs
-Imagem para PHPFPM, Laravel e NodeJS
-[Docker Hub](https://hub.docker.com/r/thiagoppo/docker-phpfpm-laravel-nodejs/).
+# docker-php
+Imagem com PHP 5.6
+[Docker Hub](https://hub.docker.com/r/thiagoppo/docker-php/).
 
-- PHP 5
-- Laravel 5.4
+- PHP 5.6
 - Composer
-- NodeJS
-- Bower
-- Gulp
